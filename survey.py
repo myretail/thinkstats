@@ -73,11 +73,14 @@ class Table(object):
                 s = line[start-1:end]
                 val = cast(s)
             except ValueError:
+
                 # If you are using Visual Studio, you might see an
                 # "error" at this point, but it is not really an error;
                 # I am just using try...except to handle not-available (NA)
                 # data.  You should be able to tell Visual Studio to
                 # ignore this non-error.
+                #print line
+                #print field, start, end, s
                 val = 'NA'
             setattr(obj, field, val)
         return obj
@@ -187,11 +190,13 @@ class Pregnancies(Table):
 def main(name, data_dir='.'):
     resp = Respondents()
     resp.ReadRecords(data_dir)
+
     print ('Number of respondents', len(resp.records))
 
     preg = Pregnancies()
     preg.ReadRecords(data_dir)
     print ('Number of pregnancies', len(preg.records))
+
 
     
 if __name__ == '__main__':
