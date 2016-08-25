@@ -7,4 +7,4 @@ def RemainingLifetime(pmf, age):
 if __name__ == '__main__':
     pmf = Pmf.MakePmfFromList([75,79,71,72,72,73,65,30,100])
     remainingPmf = RemainingLifetime(pmf, 90)
-    print "Remaining PMF", remainingPmf.Items()
+    print ("Remaining PMF", remainingPmf.Items())

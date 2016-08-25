@@ -10,9 +10,9 @@ def PmfVar(pmf):
 
 if __name__ == '__main__':
     pmf = Pmf.MakePmfFromList([75,79,71,72,72,73,65,30,100])
-    print "Mean", PmfMean(pmf)
-    print "Var", PmfVar(pmf)
-    print "Using lib. Must be the same."
-    print "Mean", pmf.Mean()
-    print "Var", pmf.Var()
+    print( "Mean", PmfMean(pmf))
+    print( "Var", PmfVar(pmf))
+    print( "Using lib. Must be the same.")
+    print( "Mean", pmf.Mean())
+    print( "Var", pmf.Var())
 

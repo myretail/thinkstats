@@ -59,33 +59,33 @@ def MakeTables(data_dir='.'):
 def Summarize(pool, firsts, others):
     """Print various summary statistics."""
     
-    print
-    print 'Variance'
-    print 'First babies', firsts.var 
-    print 'Others', others.var
+    print()
+    print ('Variance')
+    print ('First babies', firsts.var)
+    print ('Others', others.var)
 
     diff_mu = firsts.mu - others.mu
 
-    print 'Difference in mean', diff_mu
+    print ('Difference in mean', diff_mu)
 
     sigma = math.sqrt(pool.var)
 
-    print 'Pooled mean', pool.mu
-    print 'Pooled variance', pool.var
-    print 'Pooled sigma', sigma
+    print ('Pooled mean', pool.mu)
+    print ('Pooled variance', pool.var)
+    print ('Pooled sigma', sigma)
 
-    print firsts.mu, others.mu
-    print firsts.trim, others.trim
+    print (firsts.mu, others.mu)
+    print (firsts.trim, others.trim)
     
     live_lengths = pool.hist.GetDict().items()
-    live_lengths.sort()
-    print 'Shortest lengths:'
-    for weeks, count in live_lengths[:10]:
-        print weeks, count
+    sorted(live_lengths)
+    print ('Shortest lengths:')
+    for weeks, count in list(live_lengths)[:10]:
+        print (weeks, count)
     
-    print 'Longest lengths:'
-    for weeks, count in live_lengths[-10:]:
-        print weeks, count
+    print ('Longest lengths:')
+    for weeks, count in list(live_lengths)[-10:]:
+        print (weeks, count)
     
 
 def MakeFigures(firsts, others):

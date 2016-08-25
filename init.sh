@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 wget http://thinkstats.com/survey.py
 wget http://greenteapress.com/thinkstats/2002FemPreg.dat.gz
 wget http://greenteapress.com/thinkstats/2002FemResp.dat.gz

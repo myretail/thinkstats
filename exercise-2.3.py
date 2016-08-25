@@ -9,5 +9,5 @@ def AllModes(hist):
 
 if __name__ == '__main__':
     hist = Pmf.MakeHistFromList([1,2,2,5,3,-1, -1, -1, -1]) 
-    print "Mode of hist is", Mode(hist)
-    print "All modes", AllModes(hist)
+    print ("Mode of hist is", Mode(hist))
+    print ("All modes", AllModes(hist))
