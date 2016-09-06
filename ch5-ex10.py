@@ -10,5 +10,5 @@ def binomial_distribution(n, k, p):
 def binomial_thinkstats(n, k, p):
     return thinkstats.Binom(n, k) * (p ** k) * ((1 - p) ** (n - k))
 
-print 'my way', binomial_distribution(100, 50, 1.0 / 6.0)
-print 'thinkstats way', binomial_thinkstats(100, 50, 1.0 / 6.0)
+print ('my way', binomial_distribution(100, 50, 1.0 / 6.0))
+print ('thinkstats way', binomial_thinkstats(100, 50, 1.0 / 6.0))

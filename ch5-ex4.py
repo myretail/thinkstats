@@ -14,5 +14,5 @@ for i in range(1000):
         stick_wins += 1 
 
 
-print 'switch wins', switch_wins
-print 'stick wins', stick_wins    
+print ('switch wins', switch_wins)
+print ('stick wins', stick_wins    )

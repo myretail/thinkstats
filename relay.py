@@ -7,6 +7,8 @@ License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 
 import urllib
 
+from urllib.request import urlopen
+
 import myplot
 import Pmf
 
@@ -49,7 +51,7 @@ def CleanLine(line):
 def ReadResults(url=results):
     """Read results from coolrunning and return a list of tuples."""
     results = []
-    conn = urllib.urlopen(url)
+    conn = urlopen(url)
     for line in conn.fp:
         t = CleanLine(line)
         if t:

@@ -15,5 +15,5 @@ samples = Samples()
 zipped = zip(*samples)
 
 for list in zipped:
-   print numpy.mean(list)
+   print (numpy.mean(list))
 
