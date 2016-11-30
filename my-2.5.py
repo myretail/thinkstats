@@ -14,3 +14,6 @@ if __name__ == '__main__':
     print("使用内建函数计算，结果应该和自己编写的函数返回值相同")
     print ("Mean:" , pmf.Mean())
     print ("Var:", pmf.Var())
+
+
+(test)
